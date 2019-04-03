@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Index</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <style>
+    /* .nav {
+      height: 0;
+    } */
+    .nav{
+      height: 50px;
+      line-height: 64px;
+    }
+
+    .jumbo-img {
+      background-image: url('techno_bg.jpeg');
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .jumbotron {
+      margin-top: -20px;
+      height: 600px;
+    }
+
+    .bg-text {
+      background-color: rgb(134, 139, 139);
+      /* Fallback color */
+      background-color: rgba(191, 200, 202, 0.4);
+      /* Black w/opacity/see-through */
+      color: black;
+      font-weight: bold;
+      border: 3px solid #f1f1f1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 60%;
+      padding: 20px;
+      text-align: center;
+      font-family: 'Titillium Web';
+      font-size: 80px;
+    }
+
+    h1 {
+      font-size: 100px;
+    }
+
+    .page-footer {
+      background-color: rgb(81, 82, 84);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Check Cheque</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="{{ 'active' if active_page == 'home_page' else '' }}"><a href="{{ url_for('home_page') }}">Home</a></li>
+        <li><a href="#">Guide</a></li>
+        <li class="{{ 'active' if active_page == 'upload_page' else '' }}"><a href="{{ url_for('upload_page') }}">Use it</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron jumbo-img">
+
+  </div>
+  <div class="bg-text">
+    <h1 class="display-3">Check Cheque</h1>
+
+    <p class="lead">Aimed at reducing time required in bank transfers</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="auto.jpeg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align:center">Cognitive Automation</h4>
+            <p class="card-text" style="margin:5px"> Artificial Intelligence automating the world. Automation of the manual transaction process. </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="text.png" alt="Card image" style="width:100%" >
+          <div class="card-body">
+            <h4 class="card-title" style="text-align:center">Text Retrieval</h4>
+            <p class="card-text" style="margin:5px">Retreiving the information on cheque in different modules. Smart Text Recognition using teserract library.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card">
+          <img class="card-img-top" src="signature.jpeg" alt="Card image" style="width:100%">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align:center">Signature Verification</h4>
+            <p class="card-text" style="margin:5px">Matching the signature on the check with the original signature. Verify handwritten signature.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
+    </div>
+
+  <br>
+  <br>
+  <br>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <img src="cc_logo.png" alt="">
+          <p class="grey-text text-lighten-4">Made with ❤️ by SPIT Mumbai_jobchahiye</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Guide </a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Use it</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2019
+        <a class="grey-text text-lighten-4 right" href="https://technoutsav.techgig.com/">Deloitte || TechnoUtsav
+          2.0</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+
+</html>

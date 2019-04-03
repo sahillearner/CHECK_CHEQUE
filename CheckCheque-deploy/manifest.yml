@@ -1,0 +1,5 @@
+---
+applications:
+ - name: CheckCheque
+   host: CheckCheque
+   memory: 128M
